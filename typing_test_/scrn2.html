@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font for head -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <!-- font for mouse hover -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(175, 154, 196);
+            box-sizing: border-box;
+        }
+        /* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+        .main {
+            background-color: #94b3d4;
+        }
+
+        .container {
+            width: 50%;
+            height: 96vh;
+            position: relative;
+
+        }
+
+        .cent {
+            background-color: burlywood;
+            position: absolute;
+            top: 50%;
+            /* left: 50%; */
+            text-align: center;
+            width: 100%;
+            border: 2px solid grey;
+            transform: translate(50%, -50%);
+        }
+
+        .head {
+            background-color: burlywood;
+            font-family: 'Architects Daughter', cursive;
+            font-size: 57px;
+            padding-top: 25px;
+        }
+        
+        button.btn {
+            border: 2px solid red;
+            border-radius: 10px 10px 10px 10px;
+            margin: 5px;
+            width: 125px;
+            font-size: 22px;
+            font-family: monospace;
+            background-color: tomato;
+        }
+
+        button.btn:hover {
+            border: 5px solid rgb(155, 31, 31);
+            border-radius: 10px 10px 10px 10px;
+            margin: 5px;
+            width: 125px;
+            font-size: 30px;
+            font-family: 'Dancing Script', cursive;
+            cursor: pointer;
+            background-color: rgb(71, 255, 178);
+        }
+
+        element.style {
+            margin: 8px 10px 9px;
+            width: 550px;
+            height: 265px;
+
+
+
+        }
+
+        .txtarea {
+            border: 8px solid silver;
+            background-color: rgb(70, 60, 60);
+            color: aliceblue;
+            border-radius: 10px 10px 10px 10px;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0px;
+            width: 644px;
+            height: 171px;
+        }
+
+        .g_txt {
+            background-color: rgb(70, 60, 60);
+            color: aliceblue;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cent">
+            <h1 class="head">Welcome to Type Test</h1>
+            <h2>Type The Below Text In The Space Provided</h2>
+            <h4 id="msg" class="g_txt"> </h4>
+            <h4 id = "remark" class="g_txt"> </h4>
+
+            <div class="main">
+                <button id="btn" class="btn" type="submit">Start</button>
+
+                <br>
+                <textarea class="txtarea" name="write" id="typed" cols="30" rows="10"
+                    placeholder="Start Typing Here"></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="scrn.js"></script>
+</body>
+
+</html>
